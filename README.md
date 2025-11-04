@@ -49,23 +49,29 @@ The application will be available at `http://localhost:5000`
 ## Usage
 
 1. Open your browser and navigate to `http://localhost:5000`
-2. Enter a description of the video you want to generate in the search box
-3. Select your preferred video size and duration
-4. Click "Generate Video" or press Enter
-5. Wait for the video generation to complete
-6. The API response will be displayed below the search box
+2. Enter a description of the video you want to generate in the text box
+3. Select your preferred aspect ratio (16:9 or 9:16)
+4. Select the resolution (currently 720p only)
+5. Select the video duration (4s, 8s, or 12s)
+6. Click "Generate Video" or press Enter
+7. Wait for the video generation to complete (may take several minutes)
+8. The video will be displayed once generation is complete
 
 ## Configuration
 
 You can configure the following parameters:
 
-- **Video Size**: Choose from portrait or landscape orientations in various resolutions
-  - 720x1280 (Portrait)
-  - 1280x720 (Landscape)
-  - 1080x1920 (Full HD Portrait)
-  - 1920x1080 (Full HD Landscape)
+- **Aspect Ratio**: Choose between landscape or portrait orientation
+  - 16:9 (Landscape)
+  - 9:16 (Portrait)
 
-- **Duration**: Select video length from 4 to 10 seconds
+- **Resolution**: Currently only 720p is supported
+  - 720p (1280x720 for 16:9, 720x1280 for 9:16)
+
+- **Duration**: Select video length
+  - 4 seconds
+  - 8 seconds
+  - 12 seconds
 
 ## API Integration
 
